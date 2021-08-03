@@ -61,6 +61,10 @@ p {
   padding: 0 50px;
 }
 
+.header-border {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
 .team-member-image img {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
