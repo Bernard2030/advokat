@@ -12,6 +12,9 @@ a {
   text-decoration: none;
   color: white;
 }
+a:hover {
+    color: white;
+}
 /* pager header */
 .page-header {
   background-image: url("../img/lawyer.jpg");
@@ -215,12 +218,16 @@ a {
 }
 
 .footer-list li {
-    list-style: none;
-    color: #ffffff;
-    font-size: 13px;
-    line-height: 2em;
+  list-style: none;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 2em;
 }
 
 .contact-info a {
-    font-size: 13px;
+  font-size: 13px;
 }
+
+/* .footer-bottom {
+    background-color: #140a02;
+} */
