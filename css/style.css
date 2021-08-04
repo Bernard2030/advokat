@@ -356,3 +356,63 @@ label.logo {
 
 
   /* ======================SERVICE PAGE END======================== */
+  /* Home styles start */
+
+
+
+  /* Home styles End */
+
+  /*Contact Us Start*/
+#overlay{
+  background-color: #190d03;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.contact-us {
+  width: 70%;
+  text-align: center;
+  padding-bottom: 9%;
+  color: black;
+}
+
+.form-control::placeholder {
+  color: black;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 700;
+}
+#name {
+  border-radius: 50px;
+  color: #000;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 550;
+
+}
+#email {
+  border-radius: 50px;
+  color: #000;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 550;
+}
+#message {
+  border-radius: 50px;
+  color: #000;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 550;
+}
+
+#submit {
+  background: #000;
+  border: solid #000 1px;
+  border-radius: 50px;
+  color: #000;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+#submit:hover {
+  background: #8ebea7;
+  border: solid #000 1px;
+  color: #000;
+}
+  /*------*/
