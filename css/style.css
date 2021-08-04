@@ -63,6 +63,10 @@ label.logo {
   border-radius: 4px;
 }
 
+.navigation-bar nav .active {
+  background-color: #745942;
+}
+
 .navigation-bar nav .active:hover {
   background-color: #66533c;
   transition: 0.5s;
