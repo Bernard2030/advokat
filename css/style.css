@@ -411,7 +411,68 @@ label.logo {
 
 
   /* ======================SERVICE PAGE END======================== */
-  /* Home styles start */
+  /* HOME START */
+  /* to project */
+  /* .home{
+    background-image: url('../img/lawprobg.jpg');
+    height: 815px;
+    width: 100%; */
+
+.Text{
+    color: #fff;
+    margin-top: 0px;
+}
+
+.firm1{
+  height: 300px;
+  
+}
+.firm2{
+  height: 300px;
+ 
+}
+.firm3{
+  height: 300px;
+ 
+}
+.lawfirms{
+  margin-top: 50px;
+  justify-content: center;
+  color: #f58607;
+}
+
+
+/* styling lawyers */
+.lawyers{
+    justify-content: center;
+    display: flex;
+    margin-top: 5px;
+    justify-items: normal;
+}
+.port1, .port2, .port3{
+  display: none; 
+  padding: 30px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 2px solid;
+  text-transform: uppercase;
+  /* font-weight: 700; */
+  /* font-size: x-large; */
+}
+  
+
+.lee{
+  height: 160px;
+}
+.smith{
+  height: 135px;
+}
 
 
 
