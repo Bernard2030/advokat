@@ -307,6 +307,61 @@ label.logo {
   background-color: #c08235;
   color: white;
 }
+
+/* single lawyer page */
+.meet-our h3 {
+  text-transform: uppercase;
+}
+.underline {
+  width: 100%;
+  border-bottom: 2px solid #000;
+  text-align: center;
+  position: relative;
+}
+.underline span {
+  position: relative;
+  top: 15px;
+  padding: 0 10px;
+  background: #fff;
+  font-size:25px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.social-media-icons li {
+  display: inline;
+  margin: 4px;
+  border: 1px solid #b8824f;
+  color: #fff;
+  background: #b8824f;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 4px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+.single-lawyer h2 {
+  color: #b8824f;
+}
+
+.title-name {
+  font-size: 22px;
+    color: #b8824f;
+    font-weight: 400;
+}
+
+.who-am {
+  color: #797979;
+}
+
+.description {
+  font-size: 16px;
+  color: #797979;
+  font-weight: 300;
+  padding: 20px 0 20px 0;
+}
 /* ========================= footer styles ======================================*/
 .footer {
   background-color: #190d03;
