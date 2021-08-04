@@ -1,0 +1,22 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* body {
+    font-family: 'Mulish', sans-serif;
+} */
+p {
+  color: #767777;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+.logo {
+    font-family: 'Lobster', cursive;
+}
