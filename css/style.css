@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 /* body {
-    font-family: 'Mulish', sans-serif;
+ 
 } */
 /* section {
   height: calc(100vh -80px);
@@ -63,9 +63,9 @@ label.logo {
   border-radius: 4px;
 }
 
-.navigation-bar nav .active {
+/* .navigation-bar nav .active {
   background-color: #745942;
-}
+} */
 
 .navigation-bar nav .active:hover {
   background-color: #66533c;
@@ -86,6 +86,25 @@ label.logo {
   display: none;
 }
 
+.btn-get-quote {
+  background-color: #745942 !important;
+  transition: 0.5s;
+}
+
+.btn-get-quote:hover {
+  color: white;
+  background-color: #1c171273 !important;
+}
+
+/* get quote */
+#send-quote input::placeholder, #send-quote textarea::placeholder {
+  color: rgb(104, 104, 104);
+  font-size: 13px;
+}
+
+.success-message {
+  display: none;
+}
 /* media */
 @media (max-width: 952px) {
   label.logo {
