@@ -635,3 +635,34 @@ label.logo {
     }
     /* Contact Us END */
   /*====================================================*/
+  .navbar-style {
+    background-color: #806C53;
+    height: 100px;
+}
+
+.circle-img img {
+
+    border-radius: 100%;
+}
+
+.w-85 {
+    width: 95%;
+   
+}
+
+.profile-bg {
+    background-color: #b8824f;
+     /* rgb(245,222,179); */
+}
+
+.bg-color {
+    background-color: #806C53;
+}
+
+
+
+
+
+
+  /*  Update-details  */
+  /* ===================================================== */
