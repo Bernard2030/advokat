@@ -24,45 +24,44 @@ $(document).ready(function () {
     var email = $("#recipient-email").val();
     var phone = $("#recipient-phone").val();
     var category = $("#category").val();
-    var message = $("#message-text").val()
+    var message = $("#message-text").val();
 
-    // validate the form 
-  //   if (name == "" || email == "" || phone == "" || category == "" || message == "") {
-  //     alert("Please fill in all the fields");
-  //     return;
-  //   }
-  //   if (!/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(email)) {
-  //     alert("Please enter a valid email address");
-  //     return;
-  //   }
-  //   if (!/^\+?\d{11,12}$/.test(phone)) {
-  //     alert("Please enter a valid phone number");
-  //     return;
-  //   }
-  //   if (category == "") {
-  //     alert("Please select a category");
-  //     return;
-  //   }
-  //   if (message == "") {
-  //     alert("Please enter a message");
-  //     return;
-  //   }
-  //   // send the data to firebase
-  //   var data = {
-  //     name: name,
-  //     email: email,
-  //     phone: phone,
-  //     category: category,
-  //     message: message
-  //   };
-    
-  //     var ref = database.ref("consultations");
-  //     ref.push(data);
-  //     $("#send-quote").hide();
-  //     $(".success-message").html("Thank you. Consultation message sent successfully!!");
-  //     $(".success-message").show();
-  // });
+    // validate the form
+    //   if (name == "" || email == "" || phone == "" || category == "" || message == "") {
+    //     alert("Please fill in all the fields");
+    //     return;
+    //   }
+    //   if (!/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(email)) {
+    //     alert("Please enter a valid email address");
+    //     return;
+    //   }
+    //   if (!/^\+?\d{11,12}$/.test(phone)) {
+    //     alert("Please enter a valid phone number");
+    //     return;
+    //   }
+    //   if (category == "") {
+    //     alert("Please select a category");
+    //     return;
+    //   }
+    //   if (message == "") {
+    //     alert("Please enter a message");
+    //     return;
+    //   }
+    //   // send the data to firebase
+    //   var data = {
+    //     name: name,
+    //     email: email,
+    //     phone: phone,
+    //     category: category,
+    //     message: message
+    //   };
 
+    //     var ref = database.ref("consultations");
+    //     ref.push(data);
+    //     $("#send-quote").hide();
+    //     $(".success-message").html("Thank you. Consultation message sent successfully!!");
+    //     $(".success-message").show();
+    // });
 
     var rules = {
       name: {
@@ -83,9 +82,8 @@ $(document).ready(function () {
         required: true,
       },
       message: {
-        required: true
-      }
-
+        required: true,
+      },
     };
     var messages = {
       name: {
@@ -112,7 +110,7 @@ $(document).ready(function () {
 
     var error = false;
     var errorMsg = "";
-    
+
     $.each(messages, function (key, value) {
       if ($("#" + key).val() === "") {
         error = true;
@@ -130,25 +128,26 @@ $(document).ready(function () {
       email: email,
       phone: phone,
       category: category,
-      message: message
+      message: message,
     };
 
     var ref = database.ref("consultations");
     ref.push(data);
     $("#send-quote").hide();
-    $(".success-message").html("Thank you. Consultation message sent successfully!!");
+    $(".success-message").html(
+      "Thank you. Consultation message sent successfully!!"
+    );
     $(".success-message").show();
   });
 
-    // database.ref("Consultation-quotes/" + name).set({
-    //   NameOfReceipt: name,
-    //   EmailOfReceipt: email,
-    //   PhoneOfReceipt: phone,
-    // });
-    // $(".success-message").val("Consultation message sent successfully!!");
-    // $(".success-message").show();
-    // console.log("done");
-
+  // database.ref("Consultation-quotes/" + name).set({
+  //   NameOfReceipt: name,
+  //   EmailOfReceipt: email,
+  //   PhoneOfReceipt: phone,
+  // });
+  // $(".success-message").val("Consultation message sent successfully!!");
+  // $(".success-message").show();
+  // console.log("done");
 
   //   send contact us messages
   $("form#contact-us").submit(function (e) {
@@ -160,21 +159,20 @@ $(document).ready(function () {
 
     // validation for user inputs
 
-    if(name == "" || email =="" || phone==""){
-      alert("Please fill in the form")
-      
-      if(name==""){
-        alert("Please write your name")
-        }else if(email==""){
-          alert("Please write your email")
-        }else if(phone==""){
-          alert("Please write a message")
-        }  
+    if (name == "" || email == "" || phone == "") {
+      alert("Please fill in the form");
+
+      if (name == "") {
+        alert("Please write your name");
+      } else if (email == "") {
+        alert("Please write your email");
+      } else if (phone == "") {
+        alert("Please write a message");
+      }
     }
-    if(name!=""& email!=""& phone!=""){
-      alert("Message Sent")
+    if ((name != "") & (email != "") & (phone != "")) {
+      alert("Message Sent");
     }
-  
 
     database.ref("contact-us/" + name).set({
       userName: name,
@@ -185,11 +183,3 @@ $(document).ready(function () {
     // alert("Message Sent")
   });
 });
-
-
-
-
-
-
-
-
