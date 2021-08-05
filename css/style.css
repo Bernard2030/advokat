@@ -271,7 +271,7 @@ a:hover {
 .lawfirms{
   margin-top: 50px;
   justify-content: center;
-  color: #f58607;
+  color: #fdfbf9;
 }
 
 
@@ -306,6 +306,13 @@ a:hover {
 .smith{
   height: 135px;
 }
+.about{
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 
 
 
