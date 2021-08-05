@@ -11,12 +11,334 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet"> 
     <title>Services</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
+    <div class="serviceBody">
+        <div class="serviceInfo p-5">
+            <h2 class="text-center my-5">How Does Advokat Work?</h2>
+            <div class="container infoSearchBody shadow-lg p-4">
+                <div class="infoSearch">
+                    <img class="mx-auto my-3" src="./img/searchicon.jpg" height="100px" width="100px">
+                    <h5 class="text-center p-4">
+                        We help you locate lawyers in real-time based on your location
+                    </h5>
+                </div>
+                <div class="emptyLine"></div>
+                <div class="findNBook">
+                    <img class="mx-auto my-3" src="./img/searchicon.jpg" height="100px" width="100px">
+                    <h5 class="text-center p-4">
+                        Find quality lawyers based on your need and schedule appointments
+                    </h5>
+                </div>
+                <div class="emptyLine"></div>
+                <div class="verifiedReviews">
+                    <img class="mx-auto my-3" src="./img/searchicon.jpg" height="100px" width="100px">
+                    <h5 class="text-center p-4">
+                        We let you read verified reviews from real clients who used Advokat
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <!-- end of part 1 -->
+        <!-- Beginning of part 2 -->
+        <div class="findLawyer p-5">
+            <form name="book" onsubmit="return false">
+                <h1 class="text-center my-5">
+                    Find A Lawyer and Make an Appointment Instantly
+                </h1>
+                <div class="container chooseLawyer">
+                    <div class="locationBody">
+                        <select class="btn location" id="location" required>
+                            <option disabled selected hidden>Enter Location</option>
+                            <option class="nairobi" id="nairobi" value="NAIROBI">Nairobi</option>
+                            <option class="nakuru" id="nakuru" value="NAKURU">Nakuru</option>
+                            <option class="machakos" id="machakos" value="MACHAKOS">Machakos</option>
+                            <option class="kisumu" id="kisumu" value="KISUMU">Kisumu</option>
+                            <option class="mombasa" id="mombasa" value="MOMBASA">Mombasa</option>
+                        </select>
+                    </div>
+                    <div class="lawAreaBody">
+                        <select class="btn lawArea" id="lawArea" required>
+                            <option disabled selected hidden>Enter Area of Law</option>
+                            <option class="administrativeLaw text-uppercase">Administrative Law</option>
+                            <option class="finance text-uppercase">Banking & Finance</option>
+                            <option class="business text-uppercase">Business Law</option>
+                            <option class="children text-uppercase">Children Law</option>
+                            <option class="criminal text-uppercase">Criminal Law</option>
+                            <option class="divorce text-uppercase">Divorce & Separation Law</option>
+                            <option class="violence text-uppercase">Domestic Violence Law</option>
+                            <option class="education text-uppercase">Education Law</option>
+                            <option class="employment text-uppercase">Employment Law</option>
+                            <option class="family text-uppercase">Family Law</option>
+                            <option class="insurance text-uppercase">Insurance Law</option>
+                            <option class="ipLaw text-uppercase">Intellectual Property Law</option>
+                            <option class="entertainment text-uppercase">Media and Entertainment Law</option>
+                            <option class="medicine text-uppercase">Medical Law</option>
+                            <option class="injury text-uppercase">Personal Injury Law</option>
+                        </select>
+                    </div>
+                    <div class="lawFirmBody">
+                        <select class="btn lawFirm" id="lawFirm" required>
+                            <option disabled selected hidden>Choose Law Firm</option>
+                            <option class="mms">MMS ADVOCATES</option>
+                            <option class="musyimi">MUSYIMI & COMPANY ADVOCATES</option>
+                            <option class="mwale">MWALE & COMPANY ADVOCATES</option>
+                            <option class="kendi">KENDI & COMPANY ADVOCATES</option>
+                            <option class="maseno">WAMBUA & MASENO ADVOCATES</option>
+                            <option class="hub">lAWYERS HUB KENYA</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="btn btn-outline-success mt-5 appointment" id ="appointment" onclick="getLawyer()">Schedule Appointment</button>
+            </form>
+        </div>
+        <!-- End of part 2 -->
 
-            <!-- footer start -->
+        <div class="lawyerOutput">
+            <!-- ==========Show Julie's Profile============== -->
+            <div class="julieReturned" id="julieReturned">
+                <h2 class="p-4">Available Lawyers</h2>
+                <div class="shadow-lg p-3 selectedLawyer">
+                    <div class="mx-5 selectedLawyerImg">
+                        <img class="myLawyer" src="./img/lawyer2.jpg" height="250px" width="250px" alt="selected lawyer photo">
+                        <button class="btn btn-success btn-lg mx-auto my-3" style="display:flex; flex-direction:column;">Contact</button>
+                    </div>
+                    <div class="lawyerIntro">
+                        <h3>Julie Oketch</h3>
+                        <h5>MMS ADVOCATES</h5>
+                        <div class="stars">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span>(32)</span>
+                        </div>
+                        <p class="font-italic">
+                            Julie is an excellent lawyer, understanding and very experienced.
+                        </p>
+                        <div class="practiceAreas" style="display:flex;">
+                            <p class="mr-2 px-1 bg-primary" style="width:fit-content; color:white; border-radius:5px;">Family Law</p>
+                            <p class="mx-2 px-1 bg-primary" style="width:fit-content; color:white; border-radius:5px;">Divorce and Separation</p>
+                            <p class="px-1 bg-primary" style="width:fit-content; color:white; border-radius:5px;">Children Law</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- =================== -->
+             <!-- ===================show John's Profile========= -->
+            <div class ="johnReturned">
+                <h2 class="p-4">Available Lawyers</h2>
+                <div class="shadow-lg p-3 selectedLawyer">
+                    <div class="mx-5 selectedLawyerImg">
+                        <img class="myLawyer" src="./img/lawyer1.jpg" height="250px" width="250px" alt="selected lawyer photo">
+                        <button class="btn btn-success btn-lg mx-auto my-3" style="display:flex; flex-direction:column;">Contact</button>
+                    </div>
+                    <div class="lawyerIntro">
+                        <h3>John Omondi</h3>
+                        <h5>MUSYIMI AND COMPANY ADVOCATES</h5>
+                        <div class="stars">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span>(52)</span>
+                        </div>
+                        <p class="font-italic">
+                            John is an excellent lawyer, understanding and very experienced.
+                        </p>
+                        <div class="practiceAreas" style="display:flex;">
+                            <p class="mr-2 px-1 bg-primary" style="width:fit-content; color:white; border-radius:5px;">Criminal Law</p>
+                            <p class="mx-2 px-1 bg-primary" style="width:fit-content; color:white; border-radius:5px;">Personal Injury</p>
+                            <p class="px-1 bg-primary" style="width:fit-content; color:white; border-radius:5px;">Media and Entertainment Law</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ===================== -->
+
+            <!-- ==================mark mutua profile======== -->
+
+            <div class ="markReturned">
+                <h2 class="p-4">Available Lawyers</h2>
+                <div class="shadow-lg p-3 selectedLawyer">
+                    <div class="mx-5 selectedLawyerImg">
+                        <img class="myLawyer" src="./img/lawyer1.jpg" height="250px" width="250px" alt="selected lawyer photo">
+                        <button class="btn btn-success btn-lg mx-auto my-3" style="display:flex; flex-direction:column;">Contact</button>
+                    </div>
+                    <div class="lawyerIntro">
+                        <h3>Mark Mutua</h3>
+                        <h5>MWALE AND COMPANY ADVOCATES</h5>
+                        <div class="stars">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span>(32)</span>
+                        </div>
+                        <p class="font-italic">
+                            Mark is an excellent lawyer, understanding and very experienced.
+                        </p>
+                        <div class="practiceAreas" style="display:flex;">
+                            <p class="mr-2 px-1 bg-primary" style="width:fit-content; color:white; border-radius:5px;">Business Law</p>
+                            <p class="mx-2 px-1 bg-primary" style="width:fit-content; color:white; border-radius:5px;">Domestic Violence</p>
+                            <p class="px-1 bg-primary" style="width:fit-content; color:white; border-radius:5px;">Medical Law</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- =========mutuaprofileend========== -->
+
+            <!-- ==============SherlineYego=========== -->
+
+            <div class ="sherlineReturned">
+                <h2 class="p-4">Available Lawyers</h2>
+                <div class="shadow-lg p-3 selectedLawyer">
+                    <div class="mx-5 selectedLawyerImg">
+                        <img class="myLawyer" src="./img/lawyer2.jpg" height="250px" width="250px" alt="selected lawyer photo">
+                        <button class="btn btn-success btn-lg mx-auto my-3" style="display:flex; flex-direction:column;">Contact</button>
+                    </div>
+                    <div class="lawyerIntro">
+                        <h3>Sherline Yego</h3>
+                        <h5>KENDI AND COMPANY ADVOCATES</h5>
+                        <div class="stars">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span>(46)</span>
+                        </div>
+                        <p class="font-italic">
+                            Sherline is an excellent lawyer, understanding and very experienced.
+                        </p>
+                        <div class="practiceAreas" style="display:flex;">
+                            <p class="mr-2 px-1 bg-primary" style="width:fit-content; color:white; border-radius:5px;">Intellectual Property Law</p>
+                            <p class="mx-2 px-1 bg-primary" style="width:fit-content; color:white; border-radius:5px;">Energy and Resources Law</p>
+                            <p class="px-1 bg-primary" style="width:fit-content; color:white; border-radius:5px;">Divorce and Separation Law</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ==========sherlineyegoend========= -->
+
+            <!-- ========justuslangatstart=========== -->
+            <div class ="justusReturned">
+                <h2 class="p-4">Available Lawyers</h2>
+                <div class="shadow-lg p-3 selectedLawyer">
+                    <div class="mx-5 selectedLawyerImg">
+                        <img class="myLawyer" src="./img/lawyer1.jpg" height="250px" width="250px" alt="selected lawyer photo">
+                        <button class="btn btn-success btn-lg mx-auto my-3" style="display:flex; flex-direction:column;">Contact</button>
+                    </div>
+                    <div class="lawyerIntro">
+                        <h3>Justus Langat</h3>
+                        <h5>WAMBUA AND MASENO ADVOCATES</h5>
+                        <div class="stars">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span>(32)</span>
+                        </div>
+                        <p class="font-italic">
+                            Justus is an excellent lawyer, understanding and very experienced.
+                        </p>
+                        <div class="practiceAreas" style="display:flex;">
+                            <p class="mr-2 px-1 bg-primary" style="width:fit-content; color:white; border-radius:5px;">Criminal Law</p>
+                            <p class="mx-2 px-1 bg-primary" style="width:fit-content; color:white; border-radius:5px;">Personal Injury</p>
+                            <p class="px-1 bg-primary" style="width:fit-content; color:white; border-radius:5px;">Media and Entertainment Law</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========justuslangatend======= -->
+            <!-- ==========fatumaali========== -->
+            <div class ="fatumaReturned">
+                <h2 class="p-4">Available Lawyers</h2>
+                <div class="shadow-lg p-3 selectedLawyer">
+                    <div class="mx-5 selectedLawyerImg">
+                        <img class="myLawyer" src="./img/lawyer2.jpg" height="250px" width="250px" alt="selected lawyer photo">
+                        <button class="btn btn-success btn-lg mx-auto my-3" style="display:flex; flex-direction:column;">Contact</button>
+                    </div>
+                    <div class="lawyerIntro">
+                        <h3>Fatuma Ali</h3>
+                        <h5>LAWYERS HUB KENYA</h5>
+                        <div class="stars">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span>(62)</span>
+                        </div>
+                        <p class="font-italic">
+                            Fatuma is an excellent lawyer, understanding and very experienced.
+                        </p>
+                        <div class="practiceAreas" style="display:flex;">
+                            <p class="mr-2 px-1 bg-primary" style="width:fit-content; color:white; border-radius:5px;">Intellectual Property Law</p>
+                            <p class="mx-2 px-1 bg-primary" style="width:fit-content; color:white; border-radius:5px;">Education Law</p>
+                            <p class="px-1 bg-primary" style="width:fit-content; color:white; border-radius:5px;">Domestic Violence Law</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ======fatumaaliend======= -->
+        </div>
+        <!-- start of part 3(five star) -->
+        <div class="container fiveStarBody p-3 my-4">
+            <h2 class="text-center mb-5">Find Lawyer Based on Five Star Review</h2>
+            <div class="reviewBody">
+                <div class="lawyerJohn text-center p-4 shadow-lg">
+                    <img src="./img/lawyer1.jpg">
+                    <div class="stars">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div class="credentials">
+                        <h6>John Omondi</h6>
+                        <p>Criminal Lawyer</p>
+                    </div>
+                </div>
+                <div class="lawyerMark text-center p-4 shadow-lg">
+                    <img src="./img/lawyer1.jpg">
+                    <div class="stars">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div class="credentials">
+                        <h6>Mark Mutua</h6>
+                        <p>Criminal Lawyer</p>
+                    </div>
+                </div>
+                <div class="lawyerJulie text-center p-4 shadow-lg">
+                    <img src="./img/lawyer1.jpg">
+                    <div class="stars">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div class="credentials">
+                        <h6>Julie Oketch</h6>
+                        <p>Criminal Lawyer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer start -->
         <footer class="footer">
             <div class="container">
                 <div class="row">
@@ -81,13 +403,16 @@
                             href="https://twitter.com/moringaschool?ref_src=twsrc%5Etfw">Tweets
                             by moringaschool</a>
                         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+    
                     </div>
                 </div>
             </div>
-
+    
             </div>
         </footer>
         <!-- footer end -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>
