@@ -430,63 +430,152 @@ label.logo {
 
 
   /* ======================SERVICE PAGE END======================== */
-  /* Home styles start */
+  /* HOME START */
+  /* to project */
+  /* .home{
+    background-image: url('../img/lawprobg.jpg');
+    height: 815px;
+    width: 100%; */
+
+.Text{
+    color: #fff;
+    margin-top: 0px;
+}
+
+.firm1{
+  height: 300px;
+  
+}
+.firm2{
+  height: 300px;
+ 
+}
+.firm3{
+  height: 300px;
+ 
+}
+.lawfirms{
+  margin-top: 50px;
+  justify-content: center;
+  color: #f58607;
+}
+
+
+/* styling lawyers */
+.lawyers{
+    justify-content: center;
+    display: flex;
+    margin-top: 5px;
+    justify-items: normal;
+}
+.port1, .port2, .port3{
+  display: none; 
+  padding: 30px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 2px solid;
+  text-transform: uppercase;
+  /* font-weight: 700; */
+  /* font-size: x-large; */
+}
+  
+
+.lee{
+  height: 160px;
+}
+.smith{
+  height: 135px;
+}
 
 
 
   /* Home styles End */
 
+
+/*===========================================*/
   /*Contact Us Start*/
-#overlay{
-  background-color: #190d03;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-.contact-us {
-  width: 70%;
-  text-align: center;
-  padding-bottom: 9%;
-  color: black;
-}
-
-.form-control::placeholder {
-  color: black;
-  font-family: 'Sarabun', sans-serif;
-  font-weight: 700;
-}
-#name {
-  border-radius: 50px;
-  color: #000;
-  font-family: 'Sarabun', sans-serif;
-  font-weight: 550;
-
-}
-#email {
-  border-radius: 50px;
-  color: #000;
-  font-family: 'Sarabun', sans-serif;
-  font-weight: 550;
-}
-#message {
-  border-radius: 50px;
-  color: #000;
-  font-family: 'Sarabun', sans-serif;
-  font-weight: 550;
-}
-
-#submit {
-  background: #000;
-  border: solid #000 1px;
-  border-radius: 50px;
-  color: #000;
-  font-family: 'Sarabun', sans-serif;
-  font-weight: 700;
-  text-align: center;
-}
-#submit:hover {
-  background: #8ebea7;
-  border: solid #000 1px;
-  color: #000;
-}
-  /*------*/
+  * {
+    box-sizing: border-box;
+    
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    color: #000;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=submit] {
+    background-color: #b8824f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #b8824f;
+  }
+  .container {
+    border-radius: 5px;
+    background-color: #190d03;
+    padding: 10px;
+  }
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .h4,h2{
+    color: #fff;
+  }
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  #name {
+      border-radius: 50px;
+      color: #000;
+      font-family: 'Sarabun', sans-serif;
+      font-weight: 550;
+    
+    }
+    #email {
+      border-radius: 50px;
+      color: #000;
+      font-family: 'Sarabun', sans-serif;
+      font-weight: 550;
+    }
+    #message {
+      border-radius: 4px;
+      color: #000;
+      font-family: 'Sarabun', sans-serif;
+      font-weight: 550;
+    }
+    #submit{
+      border-radius: 4px;
+    }
+    .h2,h4{
+      color: #fff;
+    }
+    .contacts-map{
+      padding: 30px;
+    }
+  
+    /* Contact Us END */
+  /*====================================================*/
