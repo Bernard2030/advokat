@@ -160,12 +160,36 @@ $(document).ready(function () {
 
     // validation for user inputs
 
+    if(name == "" || email =="" || phone==""){
+      alert("Please fill in the form")
+      
+      if(name==""){
+        alert("Please write your name")
+        }else if(email==""){
+          alert("Please write your email")
+        }else if(phone==""){
+          alert("Please write a message")
+        }  
+    }
+    if(name!=""& email!=""& phone!=""){
+      alert("Message Sent")
+    }
+  
+
     database.ref("contact-us/" + name).set({
       userName: name,
       userEmail: email,
       userPhone: phone,
     });
 
-    alert("message sent")
+    // alert("Message Sent")
   });
 });
+
+
+
+
+
+
+
+
