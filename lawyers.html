@@ -34,6 +34,8 @@
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-get-quote">Get Quote</a>
                 </li>
+                <li><a href="sign-in.html" class="btn btn-get-quote">Sign In</a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -415,8 +417,9 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+                    <div class="alert alert-success success-message" role="alert"></div>
+                    <p class="text-danger" id="error-message"></p>
                     <form id="send-quote">
-                        <div class="alert alert-success success-message" role="alert"></div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="mb-3">
