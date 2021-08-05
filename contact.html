@@ -13,55 +13,44 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-    <div class="container contact-us">
-      <div class="contact-overlay">
-          <br><br><br>
-          <div class="row">
-              <div class="col-sm-1"></div>
-              <div class="col-sm-5 subs">
-                  <h1 class="text-black text-center">Contact Us </h1>
-                  <form>
-                    <div class="name">
-                      <div class="form-group fill-all-form">
-                          <input type="name" class="form-control bg-transparent name" id="name" placeholder="Full Name"
-                                 required="">
-                      </div>
-                  </div>
-                    <div class="email">
-                      <div class="form-group fill-all-form">
-                          <input type="email" class="form-control bg-transparent email" id="email" placeholder="Email"
-                                 required="">
-                      </div>
-                  </div>
-                  <div class="message">
-                    <div class="form-group fill-all-form">
-                        <input type="message" class="form-control bg-transparent message" id="message" placeholder="Message.."
-                               required="">
+  <div class="row">
+  <div class="col-md-12">
+    <div class="contacts-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63818.141944585215!2d36.71411478845313!3d-1.3961431893213294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f05cf50f94e8d%3A0x51c29656e6fd8ca9!2sOngata%20Rongai!5e0!3m2!1sen!2ske!4v1628087900408!5m2!1sen!2ske" 
+          width="98%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+<div class="container">
+    <div style="text-align:center">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="row">
+      <div class="column">
+            <br><br>
+              <h4 class="text-center">Follow us on our platforms:</h4>
+              <div class="container-fluid footer">
+                <div class="footerItems">
+                    <div class="container links">
+                      <i class="fab fa-instagram">@advokat</i> ||
+                      <i class="fab fa-twitter">@advokat</i> ||
+                      <i class="fab fa-facebook">@advokat</i> ||
+                      <i class="fab fa-telegram">@advokat</i>
                     </div>
                 </div>
-                      <div class=" email-info text-center">
-                          <button class="btn click-me" onclick="subscribe();">Submit</button>
-                      </div>
-                  </form>
-              </div>
-              <div class="col-sm-5">
-                <br><br>
-                  <h4 class="text-center">Follow us on our platforms:</h4>
-                  <div class="container-fluid footer">
-                    <div class="footerItems">
-                        <div class="container links">
-                         <p><i class="fab fa-instagram">@advokats</i></p> 
-                          <p><i class="fab fa-twitter">@advokats</i></p>
-                          <p><i class="fab fa-facebook">@advokats</i></p>
-                          <p><i class="fab fa-telegram">@advokats</i></p>
-                        </div>
-                    </div>
-              </div>
-              <div class="col-sm-1"></div>
           </div>
       </div>
-  </div>
+      <div class="column">
+        <form action="https://advokats-6ee86-default-rtdb.firebaseio.com/">
+    <input type="text" id="name" name="name" placeholder="Full Name..">
+    <input type="text" id="email" name="email" placeholder="Email..">
+    <textarea id="message" name="message" placeholder="Message.." style="height:100px"></textarea>
+    <input type="submit" id="submit" value="Submit">
+
+  </form>
+</div>
+</div>
+</div>
+</body> 
   <br><br><br>
 
 <!-- footer start -->
@@ -136,7 +125,7 @@
 
   </div>
 </footer>
-  </body>
+  
   <script src="js/jquery.js"></script>
   <script src="js/script.js"></script>
   </html>
