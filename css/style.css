@@ -645,3 +645,24 @@ h4 {
 }
 /* Contact Us END */
 /*====================================================*/
+
+/* Update-profile start */
+.navbar-style {
+  background-color: #806C53;
+  height: 100px;
+}
+
+.circle-img img {
+
+  border-radius: 100%;
+}
+
+.w-85 {
+  width: 95%;
+ 
+}
+
+.profile-bg {
+  background-color: rgb(245,222,179);
+}
+/* ================================================ */

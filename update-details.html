@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/style.css">
+   
+    <title>Update Details</title>
+</head>
+<body>
+
+     <!-- navigation bar start -->
+     <div class="navigation-bar">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <label for="logo" class="logo">Advokat</label>
+            <ul class="nv-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="lawyers.html">Our Laywers</a></li>
+                <li><a href="service.html">Our services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-get-quote">Get Quote</a>
+                </li>
+                <li><a href="sign-in.html" class="btn btn-get-quote">Sign In</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- navigation bar end -->
+
+   
+
+
+    <!-- lawyer dp -->
+    <section>
+        <div class="container-fluid ms-5 mt-4">
+            <div class="row">
+                <h3>Update Details</h3>
+                <div class="profile-bg w-85"> 
+                    <div class="circle-img">
+                        <img src="./img/lawyer-1.jpeg" alt="lawyer profile pic">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- lawyer details -->
+    <section>
+        <div class="container-fluid ms-5 mt-4">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <form>
+                    
+                        <div class="mb-3">
+                          <label for="name" class="form-label">First Name</label>
+                          <input type="text" placeholder="Enter your first name here" class="form-control" id="first-name">
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Last Name</label>
+                            <input type="text" placeholder="Enter last your name here" class="form-control" id="last-name">
+                          </div>
+      
+                        <div class="mb-3">
+                            <label for="Email1" class="form-label">Email address</label>
+                            <input type="email" placeholder="Enter your email here" class="form-control" id="email">
+                          </div>
+      
+                          <div class="mb-3">
+                            <label for="phone number" class="form-label">Phone Number</label>
+                            <input type="number" placeholder="Enter your phone number here" class="form-control" id="phoneNumber" minlength="10">
+                          </div>
+    
+                          <div class="mb-3">
+                            <label for="phone number" class="form-label">Law Firm</label>
+                            <input type="text" placeholder="Enter your law firm name here" class="form-control" id="law-firm" minlength="10">
+                          </div>
+                        
+                        
+                          <div class="mb-3">
+                            <label for="location" class="form-label">Location</label>
+                            <input type="text" placeholder="Enter your residence here" class="form-control" id="location">
+                          </div>
+    
+    
+                          <div class="mb-3">
+                            <label for="location" class="form-label">Persoal Bio</label>
+                            <br>
+                            <textarea id="personal-bio" rows = "5" cols = "60" name = "description" class="text-start" minlength="50">
+                                
+                            </textarea><br>
+                         </div>
+                        
+                       
+                        
+      
+                        <!-- <button type="submit" class="btn btn-warning place-order-home">Save</button> -->
+                      </form>
+    
+                </div>
+    
+    
+    
+                <div class="col-md-4 ms-5">
+                    <form>
+                    
+                        <div class="mb-3">
+                          <label for="name" class="form-label">Law firm Supporting Documents</label>
+                          <div class="input-group mb-3">
+                            <label class="input-group-text" for="supporting-docs">Upload</label>
+                            <input type="file" class="form-control" id="supporting-docs">
+                          </div>
+                        </div>
+
+                                           
+                        <div class="mb-3">
+                            <label for="Email1" class="form-label">Area Of Law</label>
+                            <div class="mb-3">
+                                <select class="form-select form-select-sm p-2 fs-6 areaOfLaw" aria-label=".form-select-sm example">
+                                  <option selected>select your area of law here</option>
+                                  <option value="Maritime Law">Admiralty (Maritime) Law</option>
+                                  <option value="Bankruptcy Law">Bankruptcy Law</option>
+                                  <option value="Business Law">Business (Corporate) Law</option>
+                                  <option value="Civil Rights Law">Civil Rights Law</option>
+                                  <option value="Criminal Law">Criminal Law</option>
+                                  <option value="Entertainment Law">Entertainment Law</option>
+                                  <option value="Family Law">Family Law</option>
+                                  <option value="Intellectual Property Law">Intellectual Property Law</option>
+                                  <option value="International Law">International Law</option>
+                                  <option value="Real Estate Law">Real Estate Law</option>
+                                </select>  
+                              </div>
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="name" class="form-label">Qualification Documents</label>
+                            <div class="input-group mb-3">
+                              <label class="input-group-text" for="qualification-docs">Upload</label>
+                              <input type="file" class="form-control" id="qualification-docs">
+                            </div>
+                          </div>
+    
+                        <div class="mb-3">
+                            <label for="name" class="form-label ">Completed Cases</label>
+                            
+                                                                <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary ms-5 bg-color text-color-1" data-bs-toggle="modal" data-bs-target="#caseModal">
+                                        Add Case
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="caseModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h5 class="modal-title" id="modal-title">Update Details</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <form>
+
+                                                    <div class="mb-3">
+                                                        <label for="case-name" class="form-label"> Case Full Name</label>
+                                                        <input type="text" placeholder="Enter case name here" class="form-control" id="case-name">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="case-name" class="form-label">Case S/NO</label>
+                                                        <input type="text" placeholder="eg SNCNO0021002345K" class="form-control" id="case-number">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="location" class="form-label">Case Summary</label>
+                                                        <br>
+                                                        <textarea id="case-summary" rows = "5" cols = "30" name = "description" class="text-start" minlength="50">
+                                                            
+                                                        </textarea><br>
+                                                     </div>
+
+
+                                                     <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="case-outcome" id="positive-outcome">
+                                                        <label class="form-check-label" for="positive-outcome">
+                                                          Positive Outcome
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="case-outcome" id="negative-outcome">
+                                                        <label class="form-check-label" for="negative-outcome">
+                                                          Negative Outcome
+                                                        </label>
+                                                      </div>
+
+                                                  </form>
+
+
+                                            
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary text-color-1" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary addCase text-color-1">Save changes</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label ">Happy Clients</label>
+                            
+                                                                <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary ms-5 bg-color text-color-1" data-bs-toggle="modal" data-bs-target="#happyClientModal">
+                                        Add a Client
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="happyClientModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h5 class="modal-title" id="happyClientModalTitle">Update Satisfied Client</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <form id="happy-client">
+                                                    <div class="mb-3">
+                                                        <label for="happy-client" class="form-label"> Client Name</label>
+                                                        <input type="text" placeholder="Enter client name here" class="form-control" id="client-name">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="case-name" class="form-label">Case S/NO</label>
+                                                        <input type="text" placeholder="eg SNCNO0021002345K" class="form-control" id="client-case-number">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                      <label for="client-email" class="form-label">Email address</label>
+                                                      <input type="email" class="form-control" id="client-email" aria-describedby="emailHelp">
+                                                    </div>
+                                                    
+                                                  </form>
+                                            
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-warning addClient">Save changes</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                        </div>
+
+
+                                            
+                        <div class="mb-3">
+                            <label for="Email1" class="form-label">Rates</label>
+                            <div class="mb-3">
+                                <select class="form-select form-select-sm p-2 fs-6 rates" aria-label=".form-select-sm example">
+                                  <option selected>Set your rates</option>
+                                  <option value="per Hour">Per Hour</option>
+                                  <option value="Per 6 Hours">Per 6 Hours</option>
+                                  <option value="Per 24 Hours">Per 24 Hours</option>
+                                  <option value="Per Week">Per Week</option>
+                                 
+                                </select>  
+                              </div>
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="Email1" class="form-label">Amount</label>
+                            <div class="mb-3">
+                                <select class="form-select form-select-sm p-2 fs-6 pizzaName" aria-label=".form-select-sm example">
+                                  <option selected>Set your charge rates</option>
+                                  <option value="20">$ 20</option>
+                                  <option value="50">$ 50</option>
+                                  <option value="80">$ 80</option>
+                                  <option value="400">$ 400</option>
+                                 
+                                </select>  
+                              </div>
+                          </div>
+                    
+      
+                        <button type="submit" class="btn btn-primary bg-color place-order-home saveDetails text-color-1">Save Details</button>
+                      </form>
+    
+                </div>
+
+            </div>
+    
+            
+        </div>
+    </section>
+
+
+          <!-- footer start -->
+          <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="logo">
+                            <!-- <img src="img/logo.png" alt=""> -->
+                            <h3>Advokat</h3>
+                        </div>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout.
+                        </p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 contact-info">
+                        <h4>Contact Info</h4>
+                        <div class="row">
+                            <div class="col-md-4 text-center icon-left">
+                                <a href="#"><i class="fa fa-phone-alt"></i></a>
+                            </div>
+                            <div class="col-md-8 mt-1">
+                                <a href="#">0717255460</a> <br>
+                                <a href="#">0717255460</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 text-center icon-left">
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                            </div>
+                            <div class="col-md-8 mt-3">
+                                <a href="malto:info@example.com">info@example.com</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 text-center icon-left">
+                                <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+                            </div>
+                            <div class="col-md-8 mt-3">
+                                <a href="#">132, New York Street,NY</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="ml-5">Services</h4>
+                        <ul class="footer-list">
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Corporate Law</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Real Estate Law</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Financial Law</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Insurance</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Civil Ligitation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Twitter Feeds</h4>
+                        <a class="twitter-timeline" data-height="200" data-theme="dark"
+                            data-chrome="nofooter noborders noheader noscrollbar transparent"
+                            href="https://twitter.com/moringaschool?ref_src=twsrc%5Etfw">Tweets
+                            by moringaschool</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </footer>
+        <!-- footer end -->
+
+  
+    <script src="./js/update-details.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
