@@ -97,7 +97,8 @@ label.logo {
 }
 
 /* get quote */
-#send-quote input::placeholder, #send-quote textarea::placeholder {
+#send-quote input::placeholder,
+#send-quote textarea::placeholder {
   color: rgb(104, 104, 104);
   font-size: 13px;
 }
@@ -342,7 +343,7 @@ label.logo {
   top: 15px;
   padding: 0 10px;
   background: #fff;
-  font-size:25px;
+  font-size: 25px;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -367,8 +368,8 @@ label.logo {
 
 .title-name {
   font-size: 22px;
-    color: #b8824f;
-    font-weight: 400;
+  color: #b8824f;
+  font-weight: 400;
 }
 
 .who-am {
@@ -428,112 +429,112 @@ label.logo {
 }
 
 /* ========================================== */
-  /* SERVICE PAGE STYLES */
+/* SERVICE PAGE STYLES */
 
-  .serviceBody{
-    font-family: Gothic A1;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 45px;
-  }
-  
-  
-  .infoSearchBody{
-    display:flex;
-    justify-content: space-around;
-  }
-  .infoSearch, .findNBook, .verifiedReviews{
-    display:flex;
-    flex-direction: column;
-    justify-content: center !important;
-  }
-  .emptyLine{
-    height:15rem;
-    width:1px;
-    border:1px solid #806c53;
-    box-shadow:0px,0px,4px,3px grey;
-    margin:1rem;
-    background:#806c53;
-  }
-  .findLawyer{
-    background:#806c53;
-  }
-  .chooseLawyer{
-    display:flex;
-    /* border:2px solid gold; */
-    justify-content: space-around;
-  }
-  /* Appointment Button */
-  .appointment{
-    display:flex;
-    margin-left:auto;
-    margin-right:auto;
-  }
-  .reviewBody{
-    display:flex;
-    justify-content: space-around;
-    box-shadow:0px, 0px, 4px,3px grey;
-  }
-  .lawyerJohn, .lawyerMark, .lawyerJulie{
-    /* border:2px solid grey; */
-    box-shadow:0px,0px,4px,3px grey !important;
-  
-  }
-  /* result of lawyer selection */
-  .selectedLawyer{
-    display:flex;
-  }
-  .myLawyer{
-    border-radius: 50%;
-  }
-  .julieReturned{
-    /* display:none; */
-  }
-  .johnReturned{
-    /* display:none; */
-  }
-  
-    /* ======================SERVICE PAGE END======================== */
-  /* HOME START */
-  /* to project */
-  /* .home{
+.serviceBody {
+  font-family: Gothic A1;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 45px;
+}
+
+.infoSearchBody {
+  display: flex;
+  justify-content: space-around;
+}
+.infoSearch,
+.findNBook,
+.verifiedReviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+}
+.emptyLine {
+  height: 15rem;
+  width: 1px;
+  border: 1px solid #806c53;
+  box-shadow: 0px, 0px, 4px, 3px grey;
+  margin: 1rem;
+  background: #806c53;
+}
+.findLawyer {
+  background: #806c53;
+}
+.chooseLawyer {
+  display: flex;
+  /* border:2px solid gold; */
+  justify-content: space-around;
+}
+/* Appointment Button */
+.appointment {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.reviewBody {
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px, 0px, 4px, 3px grey;
+}
+.lawyerJohn,
+.lawyerMark,
+.lawyerJulie {
+  /* border:2px solid grey; */
+  box-shadow: 0px, 0px, 4px, 3px grey !important;
+}
+/* result of lawyer selection */
+.selectedLawyer {
+  display: flex;
+}
+.myLawyer {
+  border-radius: 50%;
+}
+.julieReturned {
+  /* display:none; */
+}
+.johnReturned {
+  /* display:none; */
+}
+
+/* ======================SERVICE PAGE END======================== */
+/* HOME START */
+/* to project */
+/* .home{
     background-image: url('../img/lawprobg.jpg');
     height: 815px;
     width: 100%; */
 
-.Text{
-    color: #fff;
-    margin-top: 0px;
+.Text {
+  color: #fff;
+  margin-top: 0px;
 }
 
-.firm1{
+.firm1 {
   height: 300px;
-  
 }
-.firm2{
+.firm2 {
   height: 300px;
- 
 }
-.firm3{
+.firm3 {
   height: 300px;
- 
 }
-.lawfirms{
+.lawfirms {
   margin-top: 50px;
   justify-content: center;
   color: #fdfbf9;
 }
 
-
 /* styling lawyers */
-.lawyers{
-    justify-content: center;
-    display: flex;
-    margin-top: 5px;
-    justify-items: normal;
+.lawyers {
+  justify-content: center;
+  display: flex;
+  margin-top: 5px;
+  justify-items: normal;
 }
-.port1, .port2, .port3{
-  display: none; 
+.port1,
+.port2,
+.port3 {
+  display: none;
   padding: 30px;
   color: white;
   position: absolute;
@@ -548,97 +549,96 @@ label.logo {
   /* font-weight: 700; */
   /* font-size: x-large; */
 }
-  
 
-.lee{
+.lee {
   height: 160px;
 }
-.smith{
+.smith {
   height: 135px;
 }
-.about{
+.about {
   margin-left: 10px;
   margin-right: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-
-
-
-  /* Home styles End */
-
+/* Home styles End */
 
 /*===========================================*/
-  /*Contact Us Start*/
-  .contact-us-page input[type=text], select, textarea {
+/*Contact Us Start*/
+.contact-us-page input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  color: #000;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.contact-us-page input[type="submit"] {
+  background-color: #b8824f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+.contact-us-page input[type="submit"]:hover {
+  background-color: #b8824f;
+}
+.contact-us-page {
+  border-radius: 5px;
+  background-color: #190d03;
+  padding: 10px;
+}
+.contact-us-page .column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+.row-contact:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.contact-us-page .h4,
+.contact-us-page h2 {
+  color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .contact-us-page .column,
+  input[type="submit"] {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    color: #000;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+    margin-top: 0;
   }
-  .contact-us-page input[type=submit] {
-    background-color: #b8824f;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-  }
-  .contact-us-page input[type=submit]:hover {
-    background-color: #b8824f;
-  }
-  .contact-us-page {
-    border-radius: 5px;
-    background-color: #190d03;
-    padding: 10px;
-  }
-  .contact-us-page .column {
-    float: left;
-    width: 50%;
-    margin-top: 6px;
-    padding: 20px;
-  }
-  .row-contact:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .contact-us-page .h4, .contact-us-page h2{
-    color: #fff;
-  }
-  @media screen and (max-width: 600px) {
-    .contact-us-page .column, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  }
-  .contact-us-page #name {
-      border-radius: 50px;
-      color: #000;
-      font-family: 'Sarabun', sans-serif;
-      font-weight: 550;
-    
-    }
-    .contact-us-page #email {
-      border-radius: 50px;
-      color: #000;
-      font-family: 'Sarabun', sans-serif;
-      font-weight: 550;
-    }
-    .contact-us-page #message {
-      border-radius: 4px;
-      color: #000;
-      font-family: 'Sarabun', sans-serif;
-      font-weight: 550;
-    }
-    .contact-us-page #submit{
-      border-radius: 4px;
-    }
-    .contact-us-page .h2,h4{
-      color: #fff;
-    }
-    /* Contact Us END */
-  /*====================================================*/
+}
+.contact-us-page #name {
+  border-radius: 50px;
+  color: #000;
+  font-family: "Sarabun", sans-serif;
+  font-weight: 550;
+}
+.contact-us-page #email {
+  border-radius: 50px;
+  color: #000;
+  font-family: "Sarabun", sans-serif;
+  font-weight: 550;
+}
+.contact-us-page #message {
+  border-radius: 4px;
+  color: #000;
+  font-family: "Sarabun", sans-serif;
+  font-weight: 550;
+}
+.contact-us-page #submit {
+  border-radius: 4px;
+}
+.contact-us-page .h2,
+h4 {
+  color: #fff;
+}
+/* Contact Us END */
+/*====================================================*/
