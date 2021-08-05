@@ -17,6 +17,7 @@
 </head>
 
 <body>
+  <!-- navigation bar start -->
   <div class="navigation-bar">
     <nav>
       <input type="checkbox" id="check">
@@ -25,160 +26,86 @@
       </label>
       <label for="logo" class="logo">Advokat</label>
       <ul class="nv-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="lawyers.html">Our Laywers</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="lawyers.html">Our Laywers</a></li>
         <li><a href="service.html">Our services</a></li>
         <li><a href="contact.html">Contact Us</a></li>
         <li><a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-get-quote">Get Quote</a>
         </li>
+        <li><a href="sign-in.html" class="btn btn-get-quote">Sign In</a>
+        </li>
       </ul>
     </nav>
   </div>
+  <!-- navigation bar end -->
 
   <section id="home">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide home-page-slider" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <!-- <h1 class="text-center"><strong>Advokat</strong></h1>
-        <p class="text-center">A platform where clients meet high and qualified lawyers at ease<br>Have A Walk and find a lawyer of your choice.</p> -->
+        <div class="carousel-item ">
           <img src="./img/bcfirm1.jpg" class="d-block w-100" alt="...">
         </div>
-        <div class="carousel-item">
-          <!-- <h1 class="text-center"><strong>OUR SLOGAN</strong></h1>
-        <p class="text-center">Justice For All</p>
-        <p class="text-center">Access it easily</p> -->
-          <img src="./img/bcfirm2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-item active">
+          <img src="https://citybook.pk/wp-content/uploads/2020/10/Best-Top-10-Lawyers-In-Islamabad-750x400.jpg"
+            class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <!-- <h1 class="text-center"><strong>OUR LAWYERS</strong></h1>
-        <p class="text-center">We link you to high profile lawyers always and give you there ratings</p> -->
           <img src="./img/bcfirm3.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
 
 
-    <div class="container my-4">
-      <h1 class="ourlawyers text-center"><strong>OUR LAWYERS</strong></h1>
+    <div class="container mt-3">
+      <h1 class="ourlawyers text-center"><strong>OUR TOP LAWYERS</strong></h1>
 
-      <!--Carousel Wrapper-->
-      <div id="mycarousel" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-        <!--Controls-->
-        <div class="controls-top">
-          <a class="btn-floating" href="#" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
-          <a class="btn-floating" href="#" data-slide="next"><i class="fas fa-chevron-right"></i></a>
-        </div>
-        <!--/.Controls-->
-
-        <!--Indicators-->
-        <ol class="carousel-indicators">
-          <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-          <li data-target="#multi-item-example" data-slide-to="1"></li>
-
-        </ol>
-        <!--/.Indicators-->
-
-        <!--Slides-->
-        <div class="carousel-inner" role="listbox">
-
-          <!--First slide-->
-          <div class="carousel-item active">
-
-            <div class="  col-md-3" style="float:left">
-              <div class="card mb-2">
-                <img class=" lee card-img-top" src="./img/blawyer1.jpg" alt="Card image cap">
-                <div class=" blawyers card-body">
-                  <h4 class="card-title">Mary Lee</h4>
-                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, maiores
-                    nihil? Optio distinctio, minima consequuntur provident nisi laboriosam, maiores ducimus rem iste
-                    autem vero sit aliquam recusandae inventore mollitia. Labore!
-                    card's content.</p>
-                  <!-- <a class="btn btn-primary">Button</a> -->
-                </div>
-              </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/blawyer1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><a href="/single-lawyer-details.html">Meghan james</a></h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
             </div>
-
-            <div class="col-md-3" style="float:left">
-              <div class="card mb-2">
-                <img class="card-img-top" src="./img/blawyer2.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title">Meghan james</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur explicabo magnam
-                    nam doloribus veniam eos facilis vero doloremque, iure sint quasi, pariatur accusamus deleniti porro
-                    libero beatae minima eaque nemo.
-                    card's content.</p>
-                  <!-- <a class="btn btn-primary">Button</a> -->
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-3" style="float:left">
-              <div class="card mb-2">
-                <img class="card-img-top" src="./img/blawyer3.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title">Nail Armstrong</h4>
-                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, optio hic
-                    saepe sit nulla aperiam odit veniam similique molestiae velit ducimus alias necessitatibus nisi
-                    autem expedita possimus nobis quasi sed.
-                    card's content.</p>
-                  <!-- <a class="btn btn-primary">Button</a> -->
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-3" style="float:left">
-              <div class="card mb-2">
-                <img class="smith card-img-top" src="./img/blawyer4.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title">Willy Smith</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, sed! Consequuntur
-                    alias, optio ducimus architecto, dolore deleniti expedita aliquid aspernatur asperiores repellendus
-                    assumenda? Harum praesentium libero itaque id consequuntur quibusdam!
-                    card's content.</p>
-                  <!-- <a class="btn btn-primary">Button</a> -->
-                </div>
-              </div>
-            </div>
-
           </div>
-          <!--/.First slide-->
-
-          <!--Second slide-->
-
-          <!--/.Second slide-->
-
-
-
         </div>
-        <!--/.Slides-->
-
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/blawyer2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><a href="/single-lawyer-details.html">Meghan james</a></h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/blawyer3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><a href="/single-lawyer-details.html">Meghan james</a></h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/blawyer4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><a href="/single-lawyer-details.html">Meghan james</a></h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <!--/.Carousel Wrapper-->
-
-
       <!-- our law firms -->
 
       <div class="lawfirms row g-4 p-3">
-        <h3 class="text-center"><strong>OUR LAW_FIRMS</strong></h3>
+        <h3 class="text-center"><strong>OUR LAW FIRM</strong></h3>
         <div class="firm1 col-md-6 col-lg-3">
           <div class="card bg-light">
             <div class="cbdy text-center">
@@ -215,10 +142,95 @@
       </div>
     </div>
 
-
-
   </section>
-
+  <!-- start of part 3(five star) -->
+  <div class="container fiveStarBody p-3 my-4">
+    <h2 class="text-center mb-5">Reviews From Other Clients</h2>
+    <div class="reviewBody">
+      <div class="lawyerSherline text-center p-4 shadow-lg">
+        <div class="stars">
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        <p>
+          "Excellent work with good explanation, understanding of the matter and how to deal with it."
+        </p>
+        <p>Sherline, 11/1/2020</p>
+        <div class="reviewLawyer" style="display:flex; justify-content:center;">
+          <img class="mx-3 text-center" src="./img/blawyer5.jpeg" height="100px" width="100px"
+            style="border-radius: 50%;">
+          <div class="credentials">
+            <h5 class="font-weight-bold">Sherline Yego</h5>
+            <p>Criminal Lawyer</p>
+          </div>
+        </div>
+      </div>
+      <div class="lawyerJulie text-center p-4 shadow-lg">
+        <div class="stars">
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        <p>
+          "I was very impressed with the service lots of great information. Genuinely interested and
+          actually went overtime. I'm so happy I was referred to Advokat"
+        </p>
+        <p>Julie, 16/6/2017</p>
+        <div class="reviewLawyer" style="display:flex; justify-content:center;">
+          <img class="mx-3 text-center" src="./img/lawyer2.jpg" height="100px" width="100px"
+            style="border-radius: 50%;">
+          <div class="credentials">
+            <h5 class="font-weight-bold">Julie Oketch</h5>
+            <p>Children Lawyer</p>
+          </div>
+        </div>
+      </div>
+      <div class="lawyerMark text-center p-4 shadow-lg">
+        <div class="stars">
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        <p>
+          "I was very impressed with the service lots of great information. Genuinely interested and
+          actually went overtime. I'm so happy I was referred to Advokat"
+        </p>
+        <p>Mark, 17/8/2021</p>
+        <div class="reviewLawyer" style="display:flex; justify-content:center;">
+          <img class="mx-3 text-center" src="./img/lawyer1.jpg" height="100px" width="100px"
+            style="border-radius: 50%;">
+          <div class="credentials">
+            <h5 class="font-weight-bold">Mark Mutua</h5>
+            <p>Business Lawyer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- contact us -->
+  <div class="contact-us-container mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Happy To Discuss About Your Requirement</h2>
+          <p>
+            It is a long established fact that a reader will be distracted by the readable content
+            of a page when looking at its layout.
+          </p>
+        </div>
+        <div class="col-md-4 text-center mt-4">
+          <a href="contact.html" class="btn">Contact Us <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- footer section -->
   <footer class="footer">
     <div class="container">
