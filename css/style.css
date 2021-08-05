@@ -564,11 +564,7 @@ label.logo {
 
 /*===========================================*/
   /*Contact Us Start*/
-  * {
-    box-sizing: border-box;
-    
-  }
-  input[type=text], select, textarea {
+  .contact-us-page input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -577,69 +573,65 @@ label.logo {
     margin-bottom: 16px;
     resize: vertical;
   }
-  input[type=submit] {
+  .contact-us-page input[type=submit] {
     background-color: #b8824f;
     color: white;
     padding: 12px 20px;
     border: none;
     cursor: pointer;
   }
-  input[type=submit]:hover {
+  .contact-us-page input[type=submit]:hover {
     background-color: #b8824f;
   }
-  .container {
+  .contact-us-page {
     border-radius: 5px;
     background-color: #190d03;
     padding: 10px;
   }
-  .column {
+  .contact-us-page .column {
     float: left;
     width: 50%;
     margin-top: 6px;
     padding: 20px;
   }
-  .row:after {
+  .row-contact:after {
     content: "";
     display: table;
     clear: both;
   }
-  .h4,h2{
+  .contact-us-page .h4, .contact-us-page h2{
     color: #fff;
   }
   @media screen and (max-width: 600px) {
-    .column, input[type=submit] {
+    .contact-us-page .column, input[type=submit] {
       width: 100%;
       margin-top: 0;
     }
   }
-  #name {
+  .contact-us-page #name {
       border-radius: 50px;
       color: #000;
       font-family: 'Sarabun', sans-serif;
       font-weight: 550;
     
     }
-    #email {
+    .contact-us-page #email {
       border-radius: 50px;
       color: #000;
       font-family: 'Sarabun', sans-serif;
       font-weight: 550;
     }
-    #message {
+    .contact-us-page #message {
       border-radius: 4px;
       color: #000;
       font-family: 'Sarabun', sans-serif;
       font-weight: 550;
     }
-    #submit{
+    .contact-us-page #submit{
       border-radius: 4px;
     }
-    .h2,h4{
+    .contact-us-page .h2,h4{
       color: #fff;
     }
-    .contacts-map{
-      padding: 30px;
-    }
-  
     /* Contact Us END */
   /*====================================================*/
