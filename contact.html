@@ -1,148 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Advokats</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Css file -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
-    <div class="container contact-us">
-      <div class="contact-overlay">
-          <br><br><br>
-          <div class="row">
-              <div class="col-sm-1"></div>
-              <div class="col-sm-5 subs">
-                  <h1 class="text-black text-center">Contact Us </h1>
-                  <form>
-                    <div class="name">
-                      <div class="form-group fill-all-form">
-                          <input type="name" class="form-control bg-transparent name" id="name" placeholder="Full Name"
-                                 required="">
-                      </div>
-                  </div>
-                    <div class="email">
-                      <div class="form-group fill-all-form">
-                          <input type="email" class="form-control bg-transparent email" id="email" placeholder="Email"
-                                 required="">
-                      </div>
-                  </div>
-                  <div class="message">
-                    <div class="form-group fill-all-form">
-                        <input type="message" class="form-control bg-transparent message" id="message" placeholder="Message.."
-                               required="">
-                    </div>
-                </div>
-                      <div class=" email-info text-center">
-                          <button class="btn click-me" onclick="subscribe();">Submit</button>
-                      </div>
-                  </form>
-              </div>
-              <div class="col-sm-5">
-                <br><br>
-                  <h4 class="text-center">Follow us on our platforms:</h4>
-                  <div class="container-fluid footer">
-                    <div class="footerItems">
-                        <div class="container links">
-                         <p><i class="fab fa-instagram">@advokats</i></p> 
-                          <p><i class="fab fa-twitter">@advokats</i></p>
-                          <p><i class="fab fa-facebook">@advokats</i></p>
-                          <p><i class="fab fa-telegram">@advokats</i></p>
+    <!-- navigation bar start -->
+    <div class="navigation-bar">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <label for="logo" class="logo">Advokat</label>
+            <ul class="nv-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="lawyers.html">Our Laywers</a></li>
+                <li><a href="service.html">Our services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-get-quote">Get Quote</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- navigation bar end -->
+    <main class="page-body">
+        <div class="col-md-12">
+            <div class="contacts-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63818.141944585215!2d36.71411478845313!3d-1.3961431893213294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f05cf50f94e8d%3A0x51c29656e6fd8ca9!2sOngata%20Rongai!5e0!3m2!1sen!2ske!4v1628087900408!5m2!1sen!2ske"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="container contact-us-page mb-5 mt-3">
+            <div style="text-align:center">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="row row-contact">
+                <div class="column">
+                    <br><br>
+                    <h4 class="text-center">Follow us on our platforms:</h4>
+                    <div class="container-fluid footer">
+                        <div class="footerItems">
+                            <div class="container links">
+                                <i class="fab fa-instagram">@advokat</i> ||
+                                <i class="fab fa-twitter">@advokat</i> ||
+                                <i class="fab fa-facebook">@advokat</i> ||
+                                <i class="fab fa-telegram">@advokat</i>
+                            </div>
                         </div>
                     </div>
-              </div>
-              <div class="col-sm-1"></div>
-          </div>
-      </div>
-  </div>
-  <br><br><br>
-
-<!-- footer start -->
-<footer class="footer">
-  <div class="container">
-      <div class="row">
-          <div class="col-md-3">
-              <div class="logo">
-                  <!-- <img src="img/logo.png" alt=""> -->
-                  <h3>Advokat</h3>
-              </div>
-              <p>
-                  It is a long established fact that a reader will be distracted by the readable content of a
-                  page when looking at its layout.
-              </p>
-              <ul class="social-icons">
-                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
-                  <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-              </ul>
-          </div>
-          <div class="col-md-3 contact-info">
-              <h4>Contact Info</h4>
-              <div class="row">
-                  <div class="col-md-4 text-center icon-left">
-                      <a href="#"><i class="fa fa-phone-alt"></i></a>
-                  </div>
-                  <div class="col-md-8 mt-1">
-                      <a href="#">0717255460</a> <br>
-                      <a href="#">0717255460</a>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-4 text-center icon-left">
-                      <a href="#"><i class="fa fa-envelope"></i></a>
-                  </div>
-                  <div class="col-md-8 mt-3">
-                      <a href="malto:info@example.com">info@example.com</a>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-4 text-center icon-left">
-                      <a href="#"><i class="fas fa-map-marker-alt"></i></a>
-                  </div>
-                  <div class="col-md-8 mt-3">
-                      <a href="#">132, New York Street,NY</a>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-3">
-              <h4 class="ml-5">Services</h4>
-              <ul class="footer-list">
-                  <li><a href="#"><i class="fas fa-chevron-right"></i> Corporate Law</a></li>
-                  <li><a href="#"><i class="fas fa-chevron-right"></i> Real Estate Law</a></li>
-                  <li><a href="#"><i class="fas fa-chevron-right"></i> Financial Law</a></li>
-                  <li><a href="#"><i class="fas fa-chevron-right"></i> Insurance</a></li>
-                  <li><a href="#"><i class="fas fa-chevron-right"></i> Civil Ligitation</a></li>
-              </ul>
-          </div>
-          <div class="col-md-3">
-              <h4>Twitter Feeds</h4>
-              <a class="twitter-timeline" data-height="200" data-theme="dark"
-                  data-chrome="nofooter noborders noheader noscrollbar transparent"
-                  href="https://twitter.com/moringaschool?ref_src=twsrc%5Etfw">Tweets
-                  by moringaschool</a>
-              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-          </div>
-      </div>
-  </div>
-
-  </div>
-</footer>
-  </body>
-  <script src="js/jquery.js"></script>
-  <script src="js/script.js"></script>
-  </html>
+                </div>
+                <div class="column">
+                    <form id="contact-us">
+                        <input type="text" id="name" name="name" placeholder="Full Name..">
+                        <input type="text" id="email" name="email" placeholder="Email..">
+                        <textarea id="message" name="message" placeholder="Message.." style="height:100px"></textarea>
+                        <input type="submit" id="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- contact us -->
+        <div class="contact-us-container mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2>Happy To Discuss About Your Requirement</h2>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content
+                            of a page when looking at its layout.
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-center mt-4">
+                        <a href="contact-us.html" class="btn">Contact Us <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
+        <!-- footer start -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="logo">
+                            <!-- <img src="img/logo.png" alt=""> -->
+                            <h3>Advokat</h3>
+                        </div>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout.
+                        </p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 contact-info">
+                        <h4>Contact Info</h4>
+                        <div class="row">
+                            <div class="col-md-4 text-center icon-left">
+                                <a href="#"><i class="fa fa-phone-alt"></i></a>
+                            </div>
+                            <div class="col-md-8 mt-1">
+                                <a href="#">0717255460</a> <br>
+                                <a href="#">0717255460</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 text-center icon-left">
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                            </div>
+                            <div class="col-md-8 mt-3">
+                                <a href="malto:info@example.com">info@example.com</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 text-center icon-left">
+                                <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+                            </div>
+                            <div class="col-md-8 mt-3">
+                                <a href="#">132, New York Street,NY</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="ml-5">Services</h4>
+                        <ul class="footer-list">
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Corporate Law</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Real Estate Law</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Financial Law</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Insurance</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Civil Ligitation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Twitter Feeds</h4>
+                        <a class="twitter-timeline" data-height="200" data-theme="dark"
+                            data-chrome="nofooter noborders noheader noscrollbar transparent"
+                            href="https://twitter.com/moringaschool?ref_src=twsrc%5Etfw">Tweets
+                            by moringaschool</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+                    </div>
+                </div>
+            </div>
 
+            </div>
+        </footer>
+        <!-- footer end -->
+    </main>
+    <!-- jquery -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
 
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script>
+    <!-- scripts firebase -->
+    <script src="firebase/init.js"></script>
+    <script src="js/script.js"></script>
 
+</html>
