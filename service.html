@@ -11,142 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet"> 
     <title>Services</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
-    <div class="serviceBody">
-        <div class="serviceInfo p-5">
-            <h2 class="text-center my-5">How Does Advokat Work?</h2>
-            <div class="container infoSearchBody shadow-lg p-4">
-                <div class="infoSearch">
-                    <img class="mx-auto my-3" src="./img/searchicon.jpg" height="100px" width="100px">
-                    <h5 class="text-center p-4">
-                        We help you locate lawyers in real-time based on your location
-                    </h5>
-                </div>
-                <div class="emptyLine"></div>
-                <div class="findNBook">
-                    <img class="mx-auto my-3" src="./img/searchicon.jpg" height="100px" width="100px">
-                    <h5 class="text-center p-4">
-                        Find quality lawyers based on your need and schedule appointments
-                    </h5>
-                </div>
-                <div class="emptyLine"></div>
-                <div class="verifiedReviews">
-                    <img class="mx-auto my-3" src="./img/searchicon.jpg" height="100px" width="100px">
-                    <h5 class="text-center p-4">
-                        We let you read verified reviews from real clients who used Advokat
-                    </h5>
-                </div>
-            </div>
-        </div>
-        <!-- Beginning of part 1 -->
-        <div class="findLawyer p-5">
-            <form name="book">
-                <h1 class="text-center my-5">
-                    Find A Lawyer and Make an Appointment Instantly
-                </h1>
-                <div class="container chooseLawyer">
-                    <div class="locationBody">
-                        <select class="btn location" id="location" required>
-                            <option disabled selected hidden>Enter Location</option>
-                            <option class="nairobi" id="nairobi" value="NAIROBI">Nairobi</option>
-                            <option class="nakuru" id="nakuru" value="NAKURU">Nakuru</option>
-                            <option class="machakos" id="machakos" value="MACHAKOS">Machakos</option>
-                            <option class="kisumu" id="kisumu" value="KISUMU">Kisumu</option>
-                            <option class="mombasa" id="mombasa" value="MOMBASA">Mombasa</option>
-                        </select>
-                    </div>
-                    <div class="lawAreaBody">
-                        <select class="btn lawArea" id="lawArea" required>
-                            <option disabled selected hidden>Enter Area of Law</option>
-                            <option class="administrativeLaw">Administrative Law</option>
-                            <option class="finance">Banking & Finance</option>
-                            <option class="business">Business Law</option>
-                            <option class="children">Children Law</option>
-                            <option class="criminal">Criminal Law</option>
-                            <option class="divorce">Divorce & Separation Law</option>
-                            <option class="violence">Domestic Violence Law</option>
-                            <option class="education">Education Law</option>
-                            <option class="employment">Employment Law</option>
-                            <option class="family">Family Law</option>
-                            <option class="insurance">Insurance Law</option>
-                            <option class="ipLaw">Intellectual Property Law</option>
-                            <option class="entertainment">Media and Entertainment Law</option>
-                            <option class="medicine">Medical Law</option>
-                            <option class="injury">Personal Injury Law</option>
-                        </select>
-                    </div>
-                    <div class="lawFirmBody">
-                        <select class="btn lawFirm" id="lawFirm" required>
-                            <option disabled selected hidden>Choose Law Firm</option>
-                            <option class="mms">MMS ADVOCATES</option>
-                            <option class="musyimi">MUSYIMI & COMPANY ADVOCATES</option>
-                            <option class="mwale">MWALE & COMPANY ADVOCATES</option>
-                            <option class="kendi">KENDI & COMPANY ADVOCATES</option>
-                            <option class="maseno">WAMBUA & MASENO ADVOCATES</option>
-                            <option class="hub">lAWYERS HUB KENYA</option>
-                        </select>
-                    </div>
-                </div>
-                <button class="btn btn-outline-success mt-5 appointment" onclick="getLawyer()">Schedule Appointment</button>
-            </form>
-        </div>
-        <!-- End of part 1 -->
-    
-        <!-- start of part two(five star) -->
-        <div class="container fiveStarBody p-3 my-4">
-            <h2 class="text-center mb-5">Find Lawyer Based on Five Star Review</h2>
-            <div class="reviewBody">
-                <div class="lawyerJohn text-center p-4 shadow-lg">
-                    <img src="./img/lawyer1.jpg">
-                    <div class="stars">
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                    </div>
-                    <div class="credentials">
-                        <h6>John Omondi</h6>
-                        <p>Criminal Lawyer</p>
-                    </div>
-                </div>
-                <div class="lawyerMark text-center p-4 shadow-lg">
-                    <img src="./img/lawyer1.jpg">
-                    <div class="stars">
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                    </div>
-                    <div class="credentials">
-                        <h6>Mark Mutua</h6>
-                        <p>Criminal Lawyer</p>
-                    </div>
-                </div>
-                <div class="lawyerJulie text-center p-4 shadow-lg">
-                    <img src="./img/lawyer1.jpg">
-                    <div class="stars">
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                    </div>
-                    <div class="credentials">
-                        <h6>Julie Oketch</h6>
-                        <p>Criminal Lawyer</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- footer start -->
+
+            <!-- footer start -->
         <footer class="footer">
             <div class="container">
                 <div class="row">
@@ -211,15 +81,13 @@
                             href="https://twitter.com/moringaschool?ref_src=twsrc%5Etfw">Tweets
                             by moringaschool</a>
                         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    
+
                     </div>
                 </div>
             </div>
-    
+
             </div>
         </footer>
         <!-- footer end -->
-    </div>
-    <script src="./js/scripts.js"></script>
 </body>
 </html>
