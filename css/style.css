@@ -665,4 +665,9 @@ h4 {
 .profile-bg {
   background-color: rgb(245,222,179);
 }
+
+.text-color-1:hover {
+
+  color: black;
+}
 /* ================================================ */
