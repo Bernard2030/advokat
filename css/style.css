@@ -381,6 +381,13 @@ label.logo {
   font-weight: 300;
   padding: 20px 0 20px 0;
 }
+
+/* =================== sign in =======================================*/
+.rounded-image img {
+  width: 60px;
+  border: 1px solid rgb(165, 165, 165);
+  border-radius: 50px;
+}
 /* ========================= footer styles ======================================*/
 .footer {
   background-color: #190d03;
