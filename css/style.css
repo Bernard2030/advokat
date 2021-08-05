@@ -518,10 +518,13 @@ label.logo {
 .firm3 {
   height: 300px;
 }
+.ourlawyers{
+  color: #f78009;
+}
 .lawfirms {
   margin-top: 50px;
   justify-content: center;
-  color: #fdfbf9;
+  color: #f78009;
 }
 
 /* styling lawyers */
